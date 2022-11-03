@@ -1,0 +1,127 @@
+.universe__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.universe__contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}
+
+.universe__contact-content h5 {
+    font-family: var(--font-family);
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 500;
+    color: var(--color-text);
+    padding: 1rem 0;
+}
+
+.universe__contact-content p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: normal;
+    color: var(--color-text);
+    padding: 2rem 2rem;
+    width: 70%;
+}
+
+.universe__contact-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.universe__contact-inputs input{
+    font-family: var(--font-family);
+    background: var(--color-transparent);
+    font-size: 18px;
+    color: var(--color-text);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+}
+
+.universe__contact-inputs textarea {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--color-text);
+    background: var(--color-transparent);
+    border: 1px solid var(--color-primary);
+    outline: none;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.universe__contact-btn button {
+    font-family: var(--font-family);
+    font-size: 18px;
+    background: var(--color-primary);
+    color: var(--color-text);
+    letter-spacing: 0.1rem;
+    outline: none;
+    border: none;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.universe__contact-btn button:hover {
+    background: var(--color-secondary);
+}
+
+.universe__contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 550px) {
+
+    .universe__contact-content h5 {
+        font-size: 25px;
+    }
+
+    .universe__contact-content p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .universe__contact-inputs input {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .universe__contact-inputs textarea {
+        font-size: 14px;
+    }
+
+    .universe__contact-btn button {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .universe__contact-content p {
+        padding: 0.2rem 0.1rem;
+    }
+}

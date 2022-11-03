@@ -1,0 +1,96 @@
+.universe__products-content h3 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-text);
+    letter-spacing: 0.2rem;
+}
+
+.universe__products-content_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.universe__products-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-transparent);
+    padding: 1rem;
+}
+
+.universe__products-item_image {
+    width: 300px;
+    height: 200px;
+}
+
+.universe__products-item_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.universe__products-item h4 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 2rem 0;
+    color: var(--color-text);
+}
+
+.universe__products-item p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color-text);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.universe__products-item button {
+    font-family: var(--font-family);
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    color: var(--color-text);
+    border: none;
+    outline: none;
+    background: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.universe__products-item button:hover {
+    background: var(--color-secondary);
+}
+
+@media screen and (max-width: 780px) {
+    .universe__products-content_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .universe__products-content h3 {
+        font-size: 25px;
+    }
+
+    .universe__products-item h4 {
+        font-size: 18px;
+    }
+
+    .universe__products-item p {
+        font-size: 14px;
+        padding: 0.5rem 0;
+    }
+
+    .universe__products-item button {
+        font-size: 14px;
+    }
+}

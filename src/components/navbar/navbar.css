@@ -1,0 +1,111 @@
+.universe__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.universe__navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.universe__navbar-logo h3 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.universe__navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.universe__navbar-links p {
+    text-align: end;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.universe__navbar-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.universe__navbar-icons p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: var(--color-text);
+    transition: 250ms;
+}
+
+.universe__navbar-icons p:hover {
+    color: var(--color-primary);
+}
+
+.universe__responsive-menu {
+    display: none;
+    z-index: 2;
+}
+
+.universe__responsive-menu_container-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 10px;
+    background: var(--color-secondary);
+}
+
+.universe__responsive-menu_container-links p {
+    margin: 1rem 0;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 1024px) {
+    .universe__navbar-links p {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .universe__navbar-links {
+        display: none;
+    }
+
+    .universe__responsive-menu {
+        display: flex;
+    }
+}
